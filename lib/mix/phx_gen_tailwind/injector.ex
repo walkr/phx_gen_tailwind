@@ -27,6 +27,7 @@ defmodule Mix.Phx.Gen.Tailwind.Injector do
           "tailwindcss",
           "--input=css/app.css",
           "--output=../priv/static/assets/app.css",
+          "--postcss",
           "--watch",
           cd: Path.expand("#{dev_config_cd_path(context)}", __DIR__)
         ]
